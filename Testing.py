@@ -33,8 +33,9 @@ def test_navigation_links(driver):
 def test_social_links(driver):
     social_links = {
         "Twitter": "//div[@class='social-media']/a[contains(@href, 'twitter.com') or contains(@href, 'x.com')]",
-        "LinkedIn": "//div[@class='social-media']/a[contains(@href, 'linkedin.com')]",
-        # "Instagram": "//div[@class='social-media']/a[contains(@href, 'instagram.com')]"
+        "Instagram": "//div[@class='social-media']/a[contains(@href, 'instagram.com')]",
+        "LinkedIn": "//div[@class='social-media']/a[contains(@href, 'linkedin.com')]"
+        
     }
 
     for name, xpath in social_links.items():
